@@ -1,9 +1,14 @@
 *.py[cod]
 
+# Optimus
+libdiscon.dll
+openfast_x64.exe
+
 # OpenFAST
 *.out
 *.outb
 *.sum
+*.sum.yaml
 *.ech
 *.bts
 *.dbg
