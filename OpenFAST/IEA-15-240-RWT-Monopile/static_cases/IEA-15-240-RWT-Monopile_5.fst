@@ -3,8 +3,8 @@ IEA 15 MW offshore reference model monopile configuration
 ---------------------- SIMULATION CONTROL --------------------------------------
 False                  Echo        - Echo input data to <RootName>.ech (flag)
 "FATAL"                AbortLevel  - Error level when simulation should abort (string) {"WARNING", "SEVERE", "FATAL"}
-240.0                  TMax        - Total run time (s)
-0.006                  DT          - Recommended module time step (s)
+600.0                  TMax        - Total run time (s)
+0.005                   DT          - Recommended module time step (s)
 2                      InterpOrder - Interpolation order for input/output time history (-) {1=linear, 2=quadratic}
 0                      NumCrctn    - Number of correction iterations (-) {0=explicit calculation, i.e., no corrections}
 99999.0                DT_UJac     - Time between calls to get Jacobians (s)
@@ -30,15 +30,15 @@ False                  Echo        - Echo input data to <RootName>.ech (flag)
 30                     WtrDpth     - Water depth (m)
 0                      MSL2SWL     - Offset between still-water level and mean sea level (m) [positive upward]
 ---------------------- INPUT FILES ---------------------------------------------
-"IEA-15-240-RWT-Monopile_ElastoDyn.dat"  EDFile      - Name of file containing ElastoDyn input parameters (quoted string)
-"IEA-15-240-RWT_BeamDyn.dat"    BDBldFile(1) - Name of file containing BeamDyn input parameters for blade 1 (quoted string)
-"IEA-15-240-RWT_BeamDyn.dat"    BDBldFile(2) - Name of file containing BeamDyn input parameters for blade 2 (quoted string)
-"IEA-15-240-RWT_BeamDyn.dat"    BDBldFile(3) - Name of file containing BeamDyn input parameters for blade 3 (quoted string)
-"IEA-15-240-RWT_InflowFile.dat" InflowFile  - Name of file containing inflow wind input parameters (quoted string)
-"IEA-15-240-RWT-Monopile_AeroDyn15.dat"  AeroFile    - Name of file containing aerodynamic input parameters (quoted string)
-"IEA-15-240-RWT-Monopile_ServoDyn.dat"   ServoFile   - Name of file containing control and electrical-drive input parameters (quoted string)
-"IEA-15-240-RWT-Monopile_HydroDyn.dat"   HydroFile   - Name of file containing hydrodynamic input parameters (quoted string)
-"IEA-15-240-RWT-Monopile_SubDyn.dat"     SubFile     - Name of file containing sub-structural input parameters (quoted string)
+"../IEA-15-240-RWT-Monopile_ElastoDyn.dat"  EDFile      - Name of file containing ElastoDyn input parameters (quoted string)
+"../IEA-15-240-RWT_BeamDyn.dat"    BDBldFile(1) - Name of file containing BeamDyn input parameters for blade 1 (quoted string)
+"../IEA-15-240-RWT_BeamDyn.dat"    BDBldFile(2) - Name of file containing BeamDyn input parameters for blade 2 (quoted string)
+"../IEA-15-240-RWT_BeamDyn.dat"    BDBldFile(3) - Name of file containing BeamDyn input parameters for blade 3 (quoted string)
+"IEA-15-240-RWT_InflowFile_5.dat" InflowFile  - Name of file containing inflow wind input parameters (quoted string)
+"../IEA-15-240-RWT-Monopile_AeroDyn15.dat"  AeroFile    - Name of file containing aerodynamic input parameters (quoted string)
+"../IEA-15-240-RWT-Monopile_ServoDyn.dat"   ServoFile   - Name of file containing control and electrical-drive input parameters (quoted string)
+"../IEA-15-240-RWT-Monopile_HydroDyn.dat"   HydroFile   - Name of file containing hydrodynamic input parameters (quoted string)
+"../IEA-15-240-RWT-Monopile_SubDyn.dat"     SubFile     - Name of file containing sub-structural input parameters (quoted string)
 "none"                 MooringFile - Name of file containing mooring system input parameters (quoted string)
 "none"                 IceFile     - Name of file containing ice input parameters (quoted string)
 ---------------------- OUTPUT --------------------------------------------------
