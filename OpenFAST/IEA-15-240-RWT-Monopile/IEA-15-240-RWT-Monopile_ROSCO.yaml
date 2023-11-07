@@ -5,7 +5,7 @@
 path_params:
   FAST_InputFile: 'IEA-15-240-RWT-Monopile.fst'                                                                # Name of *.fst file
   FAST_directory: '.'                     # Main OpenFAST model directory, where the *.fst lives 
-  rotor_performance_filename: ../IEA-15-240-RWT/Cp_Ct_Cq.IEA15MW.txt  # Relative to FAST_directory or absolute
+  rotor_performance_filename: Cp_Ct_Cq.IEA15MW.txt  # Relative to FAST_directory or absolute
 
 # -------------------------------- TURBINE PARAMETERS ----------------------------------- 
 turbine_params:
