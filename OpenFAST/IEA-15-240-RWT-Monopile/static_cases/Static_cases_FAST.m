@@ -19,8 +19,8 @@ file = fi(i).name;
 
 Time                = Channels(:,1);            % load simulation data
 Wind1VelX(:,i)      = Channels(:,2);
-BldPitch1(:,i)      = Channels(:,4);
-RotSpeed(:,i)       = Channels(:,7);
+BldPitch1(:,i)      = Channels(:,6);
+RotSpeed(:,i)       = Channels(:,64);
 
 end
 
