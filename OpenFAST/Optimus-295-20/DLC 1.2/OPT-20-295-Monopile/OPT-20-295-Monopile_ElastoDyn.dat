@@ -42,8 +42,8 @@ Optimus 17-255 on IEA-15-240 monopile foundation
                  0.0   PtfmYaw      - Initial or fixed yaw rotational displacement of platform (degrees)
 --------------------------- Turbine Configuration ------------------------------
                    3   NumBl        - Number of blades (-)
-              146.5    TipRad       - The distance from the rotor apex to the blade tip (meters)
-                3.4    HubRad       - The distance from the rotor apex to the blade root (meters)
+              147.5    TipRad       - The distance from the rotor apex to the blade tip (meters)
+                3.6    HubRad       - The distance from the rotor apex to the blade root (meters)
                 -5.5   PreCone(1)   - Blade 1 cone angle (degrees)
                 -5.5   PreCone(2)   - Blade 2 cone angle (degrees)
                 -5.5   PreCone(3)   - Blade 3 cone angle (degrees) [unused for 2 blades]
