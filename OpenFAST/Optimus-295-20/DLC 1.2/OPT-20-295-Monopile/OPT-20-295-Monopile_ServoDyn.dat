@@ -36,7 +36,7 @@ Optimus 17-255 on IEA-15-240 monopile foundation
               9999.9   SIG_PORt     - Pull-out ratio (Tpullout/Trated) (-) [used only when VSContrl=0 and GenModel=1]
 --------------------------- Thevenin-Equivalent Induction Generator ------------
               9999.9   TEC_Freq     - Line frequency [50 or 60] (Hz) [used only when VSContrl=0 and GenModel=2]
-              9999.9   TEC_NPol     - Number of poles [even integer > 0] (-) [used only when VSContrl=0 and GenModel=2]
+              9998     TEC_NPol     - Number of poles [even integer > 0] (-) [used only when VSContrl=0 and GenModel=2]
               9999.9   TEC_SRes     - Stator resistance (ohms) [used only when VSContrl=0 and GenModel=2]
               9999.9   TEC_RRes     - Rotor resistance (ohms) [used only when VSContrl=0 and GenModel=2]
               9999.9   TEC_VLL      - Line-to-line RMS voltage (volts) [used only when VSContrl=0 and GenModel=2]
