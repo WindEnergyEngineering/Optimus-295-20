@@ -17,19 +17,19 @@ controller_params   = inps['controller_params']
 turbine         = ROSCO_turbine.Turbine(turbine_params)
 controller      = ROSCO_controller.Controller(controller_params)
 
-FAST_InputFile = '../OPT-20-295.fst'
+FAST_InputFile = 'OPT-20-295-Monopile.fst'
 
 cp_filename = os.path.join(tune_dir, path_params['FAST_directory'], path_params['rotor_performance_filename'])
 
 turbine.load_from_fast(
     FAST_InputFile,
-    os.path.join(tune_dir,path_params['FAST_directory']),
+    os.path.join(os.path.dirname(os.path.dirname(__file__)), path_params['FAST_directory']),
     rot_source='txt',txt_filename= cp_filename
     )
 
 controller.tune_controller(turbine)
 
-param_file = r'C:\Users\MightyH4wk\Documents\GitHub\OPTIMUS_ROSCO\PC_Test\DISCON.IN'
+param_file = os.path.join(os.path.dirname(__file__), 'OPT-20-295-Monopile-DISCON.IN')
 write_DISCON(turbine,controller,
 param_file=param_file,
 txt_filename=cp_filename
