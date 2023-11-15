@@ -19,12 +19,13 @@ controller      = ROSCO_controller.Controller(controller_params)
 
 FAST_InputFile = 'OPT-20-295-Monopile.fst'
 
-cp_filename = os.path.join(tune_dir, path_params['FAST_directory'], path_params['rotor_performance_filename'])
+cp_filename = os.path.join(os.path.dirname(os.path.dirname(__file__)), path_params['FAST_directory'], path_params['rotor_performance_filename'])
+
 
 turbine.load_from_fast(
     FAST_InputFile,
     os.path.join(os.path.dirname(os.path.dirname(__file__)), path_params['FAST_directory']),
-    rot_source='txt',txt_filename= cp_filename
+    rot_source='txt', txt_filename=cp_filename
     )
 
 controller.tune_controller(turbine)
