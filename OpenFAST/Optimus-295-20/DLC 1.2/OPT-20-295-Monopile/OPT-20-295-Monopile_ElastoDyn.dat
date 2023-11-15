@@ -125,19 +125,16 @@ Optimus 17-255 on IEA-15-240 monopile foundation
 "RotSpeed"                          - Low-speed shaft and high-speed shaft speeds 
 "RotTorq"                           - Rotor torque and low-speed shaft 0- and 90-bending moments at the main bearing              
 "RotPwr"                            - Rotor power (this is equivalent to the LSShftPwr) (kW) 
-"HSSBrTq"                           - High-speed shaft brake torque. Always positive (indicating dissipation of power) (kN·m)  
-
+"HSSBrTq"                           - High-speed shaft brake torque. Always positive (indicating dissipation of power) (kN·m)
 "Tip2Twr1"                          - Blade 1 tip-to-tower clearance estimate. This is computed as the perpendicular distance from the yaw axis to the tip of blade 1 when the blade tip is below the yaw bearing
 "Tip2Twr2"                          - Blade 2 tip-to-tower clearance estimate. When the tip of blade is bove the yaw bearing, it is computed as the absolute distance from the yaw bearing to the blade tip
-"Tip2Twr3"                          - Blade 3 tip-to-tower clearance estimate. Please note that you should reduce this value by the tower radius to obtain the actual tower clearance (m)   
-
+"Tip2Twr3"                          - Blade 3 tip-to-tower clearance estimate. Please note that you should reduce this value by the tower radius to obtain the actual tower clearance (m)
 "RootFxb1"                          - Blade 1 flapwise shear force at the blade root Directed along the xb1-axis (kN) 
 "RootFyb1"                          - Blade 1 edgewise shear force at the blade root Directed along the yb1-axis (kN) 
 "RootFzb1"                          - Blade 1 axial force at the blade root Directed along the zc,1- and zb,1-axes (kN) 
 "RootMEdg1"                         - Blade 1 edgewise moment (i.e., the moment caused by edgewise forces) at the blade root About the xb1-axis (kN·m) 
 "RootMFlp1"                         - Blade 1 flapwise moment (i.e., the moment caused by flapwise forces) at the blade root About the yb1-axis (kN·m) 
-"RootMzb1"                          - Blade 1 pitching moment at the blade root About the zc,1- and zb,1-axes (kN·m) 
-
+"RootMzb1"                          - Blade 1 pitching moment at the blade root About the zc,1- and zb,1-axes (kN·m)
 "RootFxc1"                          - Out-of-plane shear forces at the root of blade 1 
 "RootFyc1"                          - In-plane shear forces at the root of blade 1 
 "RootFzc1"
@@ -145,20 +142,17 @@ Optimus 17-255 on IEA-15-240 monopile foundation
 "RootMzc2"
 "RootMzc3"
 "RootMIP1"                          - In-plane bending moment at the root of blade 1 
-"RootMOoP1"                         - Out-of-plane bending moment at the root of blade 1  
-
+"RootMOoP1"                         - Out-of-plane bending moment at the root of blade 1
 "RotThrust"                         - LSS thrust force (this is constant along the shaftand is equivalent to the rotor thrust force) 
 "LSShftFya"                         - Rotating LSS shear force (this is constant along the shaft) 
 "LSShftFza"                         - Rotating LSS shear force (this is constant along the shaft) 
 "LSShftMxa"                         - LSS torque (this is constant along the shaft and is equivalent to the rotor torque) 
 "LSSTipMya"                         - Rotating LSS bending moment at the shaft tip (teeter pin for two-bladed turbines, apex of rotation for three-bladed turbines) 
-"LSSTipMza"                         - Rotating LSS bending moment at the shaft tip (teeter pin for two-bladed turbines, apex of rotation for three-bladed turbines)  
-
+"LSSTipMza"                         - Rotating LSS bending moment at the shaft tip (teeter pin for two-bladed turbines, apex of rotation for three-bladed turbines)
 "LSShftFys"                         - Nonrotating low-speed shaft shear force (this is constant along the shaft) Directed along the ys-axis (kN) 
 "LSShftFzs"                         - Nonrotating low-speed shaft shear force (this is constant along the shaft) Directed along the zs-axis (kN) 
 "LSSTipMys"                         - Nonrotating low-speed shaft bending moment at the shaft tip About the ys-axis (kN·m) 
-"LSSTipMzs"                         - Nonrotating low-speed shaft bending moment at the shaft tip About the zs-axis (kN·m) 
-
+"LSSTipMzs"                         - Nonrotating low-speed shaft bending moment at the shaft tip About the zs-axis (kN·m)
 "YawBrFxp"                          - Fore-aft shear forces at the top of the tower (not rotating with nacelle yaw) (kN)
 "YawBrFyp"                          - Side-to-side shear force at the top of the tower (not rotating with nacelle yaw) (kN)
 "YawBrFzp"                          - Vertical forces at the top of the tower (not rotating with nacelle yaw) (kN)
@@ -166,18 +160,15 @@ Optimus 17-255 on IEA-15-240 monopile foundation
 "YawBrMyp"                          - Fore-aft bending moment at the top of the tower (not rotating with nacelle yaw) (kN·m)
 "YawBrMzp"                          - Yaw moment at the top of the tower (not rotating with nacelle yaw) (kN·m)
 "YawBrRDyt"
-
 "NcIMUTAxs"                         - Nacelle translational acceleration (absolute) directed along the xs-axis (m/sec^2)
 "NcIMUTAys"                         - Nacelle translational acceleration (absolute) directed along the ys-axis (m/sec^2)
 "NcIMUTAzs"                         - Nacelle translational acceleration (absolute) directed along the zs-axis (m/sec^2)
-
 "TwrBsFxt"                          - Fore-aft shear force at the base of the tower (kN)
 "TwrBsFyt"                          - Side-to-side shear forces at the base of the tower (kN)
 "TwrBsFzt"                          - Vertical force at the base of the tower  (kN)
 "TwrBsMxt"                          - Side-to-side bending moment at the base of the tower (kN·m)
 "TwrBsMyt"                          - Fore-aft bending moment at the base of the tower (kN·m)
 "TwrBsMzt"                          - Yaw moment at the base of the tower (kN·m)
-
 END
 --------------------------- Node Outputs ---------------------------------------
                    0   BldNd_BladesOut - Blades to output
