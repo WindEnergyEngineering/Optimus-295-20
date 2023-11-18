@@ -105,3 +105,13 @@ Thumbs.db
 
 # Emacs #
 *~
+*.xml
+*.xml
+*.xml
+*.iml
+*.xml
+*.iml
+*.exe
+*.sum
+*.sum
+OpenFAST/Optimus-295-20/DLC 1.2/OPT-20-295-Monopile/OPT-20-295-Monopile.ED.sum

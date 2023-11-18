@@ -92,7 +92,7 @@
 1.0                 ! WE_GearboxRatio	- Gearbox ratio [>=1],  [-]
 750679600.00000       ! WE_Jtot			- Total drivetrain inertia, including blades, hub and casted generator inertia to LSS, [kg m^2]
 1.225               ! WE_RhoAir			- Air density, [kg m^-3]
-"/Users/simon.weich/Documents/GitHub/Optimus-295-20/OpenFAST/Optimus-295-20/DLC 1.2/OPT-20-295-Monopile/Cp_Ct_Cq.IEA15MW.txt"      ! PerfFileName      - File containing rotor performance tables (Cp,Ct,Cq) (absolute path or relative to this file)
+"../Cp_Ct_Cq.IEA15MW.txt"      ! PerfFileName      - File containing rotor performance tables (Cp,Ct,Cq) (absolute path or relative to this file)
 36      26          ! PerfTableSize     - Size of rotor performance tables, first number refers to number of blade pitch angles, second number referse to number of tip-speed ratios
 60                  ! WE_FOPoles_N      - Number of first-order system poles used in EKF
 3.0000 3.2414 3.4828 3.7241 3.9655 4.2069 4.4483 4.6897 4.9310 5.1724 5.4138 5.6552 5.8966 6.1379 6.3793 6.6207 6.8621 7.1034 7.3448 7.5862 7.8276 8.0690 8.3103 8.5517 8.7931 9.0345 9.2759 9.5172 9.7586 10.0000 10.6000 11.2000 11.8000 12.4000 13.0000 13.6000 14.2000 14.8000 15.4000 16.0000 16.6000 17.2000 17.8000 18.4000 19.0000 19.6000 20.2000 20.8000 21.4000 22.0000 22.6000 23.2000 23.8000 24.4000 25.0000 25.6000 26.2000 26.8000 27.4000 28.0000               ! WE_FOPoles_v      - Wind speeds corresponding to first-order system poles [m/s]

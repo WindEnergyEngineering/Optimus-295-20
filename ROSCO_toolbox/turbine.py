@@ -18,7 +18,7 @@ import pickle
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from ROSCO_toolbox.utilities1 import load_from_txt
+from ROSCO_toolbox.utilities import load_from_txt
 
 # Load OpenFAST readers
 try:

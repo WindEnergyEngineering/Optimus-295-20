@@ -75,7 +75,7 @@ Optimus 17-255 on IEA-15-240 monopile foundation
                    0   CCmode       - Cable control mode {0- none, 4- user-defined from Simulink/Labview, 5- user-defineAfC_phased from Bladed-style DLL}
 --------------------------- BLADED Interface ----------------------------------- [used only with Bladed Interface]
 "ServoData/libdiscon.DLL" DLL_FileName - Name/location of the dynamic library {.dll [Windows] or .so [Linux]} in the Bladed-DLL format (-) [used only with Bladed Interface]
-"ServoData/DISCON-UMaineSemi.IN" DLL_InFile - Name of input file sent to the DLL (-) [used only with Bladed Interface]
+"ServoData/OPT-20-295-Monopile-DISCON.IN" DLL_InFile - Name of input file sent to the DLL (-) [used only with Bladed Interface]
             "DISCON"   DLL_ProcName - Name of procedure in DLL to be called (-) [case sensitive; used only with DLL Interface]
            "default"   DLL_DT       - Communication interval for dynamic library (s) (or "default") [used only with Bladed Interface]
                False   DLL_Ramp     - Whether a linear ramp should be used between DLL_DT time steps [introduces time shift when true] (flag) [used only with Bladed Interface]
@@ -103,7 +103,9 @@ Optimus 17-255 on IEA-15-240 monopile foundation
                 True   TabDelim     - Use tab delimiters in text tabular output file? (flag) (currently unused)
           "ES10.3E2"   OutFmt       - Format used for text tabular output (except time).  Resulting field should be 10 characters. (quoted string) (currently unused)
  60.0   TStart       - Time to begin tabular output (s) (currently unused)
-                       OutList      - The next line(s) contains a list of output parameters.  
+                       OutList      - The next line(s) contains a list of output parameters.
+"GenPwr"
+"GenTq"
 END of input file (the word "END" must appear in the first 3 columns of this last Out_List line)
 ================================================================================
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
