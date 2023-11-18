@@ -3,7 +3,7 @@
 import os 
 # ROSCO toolbox modules 
 from ROSCO_toolbox import turbine as ROSCO_turbine
-from ROSCO_toolbox.utilities1 import write_rotor_performance
+from ROSCO_toolbox.utilities import write_rotor_performance
 from ROSCO_toolbox.inputs.validation import load_rosco_yaml
 
 # Initialize parameter dictionaries

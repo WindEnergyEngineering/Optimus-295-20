@@ -10,7 +10,7 @@ import os
 from ROSCO_toolbox.utilities import run_openfast
 
 #Define the path of OPENFAST 9execuatble file
-fastcall = 'openfast_x64 (2).exe'
+fastcall = 'openfast_x64.exe'
 
 # Define the directory_path to your current working directory
 # **Comment** You can also replace with the actual path to your .fst files

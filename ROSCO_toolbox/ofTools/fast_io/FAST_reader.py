@@ -5,7 +5,7 @@ from functools import reduce
 import operator
 
 from ROSCO_toolbox.ofTools.fast_io.FAST_vars_out import FstOutput
-from ROSCO_toolbox.utilities1 import read_DISCON, load_from_txt
+from ROSCO_toolbox.utilities import read_DISCON, load_from_txt
 from ROSCO_toolbox import turbine as ROSCO_turbine
 ROSCO = True
 
