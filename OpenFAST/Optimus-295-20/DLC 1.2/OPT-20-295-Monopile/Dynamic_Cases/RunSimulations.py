@@ -18,14 +18,12 @@ fastcall = 'openfast_x64.exe'
 directory_path = os.getcwd() # Replace with the actual path to your .fst files
 
 # Load all the .fst files here
-fst_files = ['OPT-20-295-Monopile_3.fst']
+fst_files = []
 
-r"""
 # Scan for all the .fst files in the directory_path and add to fst_files
 for filename in os.listdir(directory_path):
     if filename.endswith(".fst"):
         fst_files.append(filename)
-"""
 
 # Run each .fst file in a loop
 for fst_file in fst_files:
