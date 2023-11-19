@@ -19,36 +19,41 @@ file = fi(i).name;
 
 Time                = Channels(:,1);            % load simulation data
 Wind1VelX(:,i)      = Channels(:,2);
-BldPitch1(:,i)      = Channels(:,6);
-RotSpeed(:,i)       = Channels(:,64);
-GenPwr(:,i)       = Channels(:,883);
+BldPitch1(:,i)      = Channels(:,5);
+RotSpeed(:,i)       = Channels(:,9);
+GenPwr(:,i)         = Channels(:,56);
 
 end
 
 %% Plot Values 
 figure
 
-subplot(311)
+subplot(411)
 hold on;box on;grid on;
 plot(Wind1VelX)
 ylabel('v_0 [m/s]')
 %axis([71500 73000 15.5 16.5])
 %axis([0 4801 19.9 20.2])
 
-subplot(312)
+subplot(412)
 hold on;box on;grid on;
 plot(BldPitch1)
 ylabel('Angle [°]')
 %axis([71500 73000 5 10])
 %axis([0 4801 0.1 0.25])
 
-subplot(313)
+subplot(413)
 hold on;box on;grid on;
 plot(RotSpeed)
 ylabel('\Omega [rpm]')
-xlabel('time [1/80*s]')
 %axis([71500 73000 7.5 7.6])
 %axis([0 4801 12 12.5])
+
+subplot(414)
+hold on;box on;grid on;
+plot(GenPwr)
+ylabel('P_{gen} [W]')
+xlabel('time [1/80*s]')
 
 %% Static values 
 
