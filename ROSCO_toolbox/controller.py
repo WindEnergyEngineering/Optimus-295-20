@@ -13,7 +13,7 @@ import numpy as np
 import os
 import datetime
 from scipy import interpolate, integrate
-from ROSCO_toolbox.utilities1 import list_check
+from ROSCO_toolbox.utilities import list_check
 from scipy import optimize
 
 # Some useful constants
