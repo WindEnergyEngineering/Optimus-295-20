@@ -3,7 +3,7 @@ import os
 # ROSCO toolbox modules
 from ROSCO_toolbox import controller as ROSCO_controller
 from ROSCO_toolbox import turbine as ROSCO_turbine
-from ROSCO_toolbox.utilities1 import write_DISCON
+from ROSCO_toolbox.utilities import write_DISCON
 from ROSCO_toolbox.inputs.validation import load_rosco_yaml
 
 
@@ -30,7 +30,7 @@ turbine.load_from_fast(
 
 controller.tune_controller(turbine)
 
-param_file = os.path.join(os.path.dirname(__file__), 'OPT-20-295-Monopile-DISCON.IN')
+param_file = os.path.join(os.path.dirname(__file__), '../OPT-20-295-Monopile-DISCON.IN')
 write_DISCON(turbine,controller,
 param_file=param_file,
 txt_filename=cp_filename
