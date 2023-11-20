@@ -74,11 +74,11 @@
 25099935.27847      ! VS_Rgn2K			- Generator torque constant in Region 2 (HSS side), [Nm/(rad/s)^2]
 20000000.00000      ! VS_RtPwr			- Wind turbine rated power [W]
 30779416.06091      ! VS_RtTq			- Rated torque, [Nm].
-0.677970000000      ! VS_RefSpd			- Rated generator speed [rad/s]
+0.678580000000      ! VS_RefSpd			- Rated generator speed [rad/s]
 1                   ! VS_n				- Number of generator PI torque controller gains
--139070083.11967      ! VS_KP				- Proportional gain for generator PI torque controller [-]. (Only used in the transitional 2.5 region if VS_ControlMode =/ 2)
+-137402393.06440      ! VS_KP				- Proportional gain for generator PI torque controller [-]. (Only used in the transitional 2.5 region if VS_ControlMode =/ 2)
 -10809786.24000      ! VS_KI				- Integral gain for generator PI torque controller [s]. (Only used in the transitional 2.5 region if VS_ControlMode =/ 2)
-10.00               ! VS_TSRopt			- Power-maximizing region 2 tip-speed-ratio [rad].
+13.00               ! VS_TSRopt			- Power-maximizing region 2 tip-speed-ratio [rad].
 
 !------- SETPOINT SMOOTHER ---------------------------------------------
 1.00000             ! SS_VSGain         - Variable speed torque controller setpoint smoother gain, [-].
@@ -96,7 +96,7 @@
 36      26          ! PerfTableSize     - Size of rotor performance tables, first number refers to number of blade pitch angles, second number referse to number of tip-speed ratios
 60                  ! WE_FOPoles_N      - Number of first-order system poles used in EKF
 3.0000 3.2414 3.4828 3.7241 3.9655 4.2069 4.4483 4.6897 4.9310 5.1724 5.4138 5.6552 5.8966 6.1379 6.3793 6.6207 6.8621 7.1034 7.3448 7.5862 7.8276 8.0690 8.3103 8.5517 8.7931 9.0345 9.2759 9.5172 9.7586 10.0000 10.6000 11.2000 11.8000 12.4000 13.0000 13.6000 14.2000 14.8000 15.4000 16.0000 16.6000 17.2000 17.8000 18.4000 19.0000 19.6000 20.2000 20.8000 21.4000 22.0000 22.6000 23.2000 23.8000 24.4000 25.0000 25.6000 26.2000 26.8000 27.4000 28.0000               ! WE_FOPoles_v      - Wind speeds corresponding to first-order system poles [m/s]
--0.00576140 -0.00622496 -0.00668852 -0.00715208 -0.00761564 -0.00807920 -0.00854276 -0.00900632 -0.00946988 -0.00993344 -0.01039700 -0.01086056 -0.01132412 -0.01178768 -0.01225124 -0.01271480 -0.01317836 -0.01364193 -0.01410549 -0.01456905 -0.01503261 -0.01549617 -0.01595973 -0.01642329 -0.01688685 -0.01735041 -0.01781397 -0.01827753 -0.01874109 -0.01960822 0.03371698 0.02635358 0.01782419 0.00829014 -0.00153953 -0.01233327 -0.02334435 -0.03471720 -0.04611050 -0.05903595 -0.07040696 -0.08314433 -0.09622435 -0.11012538 -0.12390817 -0.13824507 -0.15136697 -0.16793883 -0.18383685 -0.20051889 -0.21717544 -0.23400306 -0.25176345 -0.26881334 -0.28703486 -0.30455191 -0.32212449 -0.33889368 -0.35630151 -0.37276465               ! WE_FOPoles        - First order system poles [1/s]
+-0.00851601 -0.00920121 -0.00988640 -0.01057160 -0.01125680 -0.01194199 -0.01262719 -0.01331239 -0.01399758 -0.01468278 -0.01536798 -0.01605317 -0.01673837 -0.01742356 -0.01810876 -0.01879396 -0.01947915 -0.02016435 -0.02084955 -0.02153474 -0.02173793 -0.02511378 -0.02519985 -0.02512446 -0.02475261 -0.02390686 -0.02317611 -0.02243674 -0.02096267 -0.01960822 0.03371698 0.02635358 0.01782419 0.00829014 -0.00153953 -0.01233327 -0.02334435 -0.03471720 -0.04611050 -0.05903595 -0.07040696 -0.08314433 -0.09622435 -0.11012538 -0.12390817 -0.13824507 -0.15136697 -0.16793883 -0.18383685 -0.20051889 -0.21717544 -0.23400306 -0.25176345 -0.26881334 -0.28703486 -0.30455191 -0.32212449 -0.33889368 -0.35630151 -0.37276465               ! WE_FOPoles        - First order system poles [1/s]
 
 !------- YAW CONTROL ------------------------------------------------------
 0.00000             ! Y_uSwitch		- Wind speed to switch between Y_ErrThresh. If zero, only the second value of Y_ErrThresh is used [m/s]
