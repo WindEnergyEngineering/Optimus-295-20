@@ -51,7 +51,7 @@ Ncl_acceleration_x(:,i)    = Channels(:,47);        % Nacelle acceleration in x 
 
 end
 
-ncl_disp = Ncl_acceleration_x * dt;                % calculate nacelle displaement
+ncl_disp = 0.5 * Ncl_acceleration_x * dt^2;                % calculate nacelle displaement
 
 %% Section 2: Plot results from static tests simulation
 
