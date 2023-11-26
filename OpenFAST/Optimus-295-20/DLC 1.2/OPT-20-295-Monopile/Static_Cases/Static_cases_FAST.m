@@ -1,6 +1,6 @@
  % -----------------------------
 
-% Script: Read FAST output files in this folder and find static endconditions 
+% Script: Read FAST output files in this folder and find static end conditions 
 %
 % Input:    roh           - Information for power on rotor
 %           D             - Rotorradius
@@ -45,6 +45,8 @@ Wind1VelX(:,i)      = Channels(:,2);
 BldPitch1(:,i)      = Channels(:,6);
 RotSpeed(:,i)       = Channels(:,9);
 GenPower(:,i)       = Channels(:,56);
+GenTq(:,i)          = Channels(:,57);
+
 Ncl_acceleration_x(:,i)    = Channels(:,47);        % Nacelle acceleration in x directon for the calculation of displacement 
 
 end
@@ -95,12 +97,13 @@ last_vals = 60/dt;                                                              
 
 for i=1:nn                                                                      % get last minutes mean values and std dev of nacelle movement 
 
-    Wind_SS(1,i) = sort(sum(Wind1VelX(end-last_vals+1:end,i))/last_vals);       % means
-    Pitch_SS(1,i) = sort(sum(BldPitch1(end-last_vals+1:end,i))/last_vals);
-    RotSpeed_SS(1,i) = sum(RotSpeed(end-last_vals+1:end,i))/last_vals;
-    GenPower_SS(1,i) = sum(GenPower(end-last_vals+1:end,i))/last_vals;
+    Wind_SS(1,i)        = sort(sum(Wind1VelX(end-last_vals+1:end,i))/last_vals);       % means
+    Pitch_SS(1,i)       = sort(sum(BldPitch1(end-last_vals+1:end,i))/last_vals);
+    RotSpeed_SS(1,i)    = sum(RotSpeed(end-last_vals+1:end,i))/last_vals;
+    GenPower_SS(1,i)    = sum(GenPower(end-last_vals+1:end,i))/last_vals;
+    GenTq_SS(1,i)       = sum(GenTq(end-last_vals+1:end,i))/last_vals;
 
-    Ncl_ac(1,i)    = std(ncl_disp(end-last_vals+1:end,i));
+    Ncl_ac(1,i)         = std(ncl_disp(end-last_vals+1:end,i));
 
 end
 
@@ -108,12 +111,13 @@ Wind_Speed = Wind_SS;
 Pitch_Angle = Pitch_SS;
 Rotor_Speed = RotSpeed_SS;
 Generator_Power = GenPower_SS;
+Generator_Torque = GenTq_SS;
 
 Tip_speed = Rotor_Speed./60*2*pi*0.5*D;
 TSR = Tip_speed./Wind_Speed;
                                                        
-Static_Conditions = table(Wind_Speed.', Pitch_Angle.', Rotor_Speed.', Generator_Power.', TSR.', Ncl_ac.' , ...       % write stedy states table  
-    'VariableNames', ["Wind_Speed","Pitch_Angle","RotSpeed", "GenPower", "TSR", "Nacell_acceleration"]);
+Static_Conditions = table(Wind_Speed.', Pitch_Angle.', Rotor_Speed.', Generator_Power.', TSR.',Generator_Torque.' , Ncl_ac.' , ...       % write stedy states table  
+    'VariableNames', ["Wind_Speed","Pitch_Angle","RotSpeed", "GenPower", "TSR","Generator_Torque", "Nacell_acceleration"]);
 Steady_States = sortrows(Static_Conditions);                                                                         % sort table
 
 %% Section 4: Plot results from steady states calculation
@@ -139,12 +143,12 @@ hold on; box on; grid on;
 plot(Wind_Speed, Generator_Power, 'b - x')
 ylabel('P_{gen} [W]')
 
-Std_Dev = table2array(Steady_States(:,6));
+Std_Dev = table2array(Steady_States(:,7));
 
 subplot(414)
 hold on; box on; grid on;
 plot(Wind_Speed, Std_Dev ,'b - x')
-ylabel('Nacelle_displacement [m]')
+ylabel('Std.Disp [m]')
 xlabel('Wind speeds [m/s]')
 
 %% Section 5: Plot power curve and calculated cp
@@ -178,6 +182,7 @@ subplot(111)
 hold on; box on; grid on;
 plot(Rotor_Speed, Generator_Power, 'b - x')
 ylabel('Power [kW]')
+xlabel('Rotor speed [rpm]')
 axis([4 7 0 22000])
 
 
