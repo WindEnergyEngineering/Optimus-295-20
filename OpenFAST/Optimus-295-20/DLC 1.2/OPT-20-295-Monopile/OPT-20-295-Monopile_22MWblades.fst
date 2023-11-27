@@ -30,12 +30,12 @@ Optimus 20MW-295 on IEA-15-240 monopile foundation
                 40.0   WtrDpth      - Water depth (m)
                  0.0   MSL2SWL      - Offset between still-water level and mean sea level (m) [positive upward]
 --------------------------- Input Files ---------------------------------------- 
-"OPT-20-295-Monopile_ElastoDyn.dat"  EDFile      - Name of file containing ElastoDyn input parameters (quoted string)
+"OPT-20-295-Monopile_ElastoDyn_22MWblades.dat"  EDFile      - Name of file containing ElastoDyn input parameters (quoted string)
               "none"  BDBldFile(1) - Name of file containing BeamDyn input parameters for blade 1 (quoted string)
               "none"  BDBldFile(2) - Name of file containing BeamDyn input parameters for blade 2 (quoted string)
               "none"  BDBldFile(3) - Name of file containing BeamDyn input parameters for blade 3 (quoted string)
 "OPT-20-295-Monopile_InflowFile.dat" InflowFile  - Name of file containing inflow wind input parameters (quoted string)
-"AeroData\OPT-20-295-Monopile_AeroDyn15.dat"  AeroFile    - Name of file containing aerodynamic input parameters (quoted string)
+"../../../IEA-22MW-280-RWT/IEA-22-280-RWT-Monopile/IEA-22-280-RWT_AeroDyn15.dat"  AeroFile    - Name of file containing aerodynamic input parameters (quoted string)
 "OPT-20-295-Monopile_ServoDyn.dat"   ServoFile   - Name of file containing control and electrical-drive input parameters (quoted string)
 "OPT-20-295-Monopile_HydroDyn.dat"   HydroFile   - Name of file containing hydrodynamic input parameters (quoted string)
 "StrucData/OPT-20-295-Monopile_SubDyn.dat"     SubFile     - Name of file containing sub-structural input parameters (quoted string)
