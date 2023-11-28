@@ -115,3 +115,10 @@ Thumbs.db
 *.sum
 *.sum
 OpenFAST/Optimus-295-20/DLC 1.2/OPT-20-295-Monopile/OPT-20-295-Monopile.ED.sum
+OpenFAST/IEA-22MW-280-RWT/IEA-22-280-RWT-Monopile/IEA-22-280-RWT-Monopile.RO.dbg2
+OpenFAST/Optimus-295-20/DLC 1.2/OPT-20-295-Monopile/OPT-20-295-Monopile.ED.sum
+OpenFAST/Optimus-295-20/DLC 1.2/OPT-20-295-Monopile/OPT-20-295-Monopile.ED.sum
+*.sum
+*.png
+OpenFAST/Optimus-295-20/DLC 1.2/OPT-20-295-Monopile/postprocessing.py
+OpenFAST/Optimus-295-20/DLC 1.2/OPT-20-295-Monopile/postprocessing.py
