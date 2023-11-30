@@ -44,9 +44,9 @@ Optimus 17-255 on IEA-15-240 monopile foundation
                    3   NumBl        - Number of blades (-)
               147.5    TipRad       - The distance from the rotor apex to the blade tip (meters)
                 3.6    HubRad       - The distance from the rotor apex to the blade root (meters)
-                 0.0   PreCone(1)   - Blade 1 cone angle (degrees)
-                 0.0   PreCone(2)   - Blade 2 cone angle (degrees)
-                 0.0   PreCone(3)   - Blade 3 cone angle (degrees) [unused for 2 blades]
+                -5.5   PreCone(1)   - Blade 1 cone angle (degrees)
+                -5.5   PreCone(2)   - Blade 2 cone angle (degrees)
+                -5.5   PreCone(3)   - Blade 3 cone angle (degrees) [unused for 2 blades]
                  0.0   HubCM        - Distance from rotor apex to hub mass [positive downwind] (meters)
                  0.0   UndSling     - Undersling length [distance from teeter pin to the rotor apex] (meters) [unused for 3 blades]
                  0.0   Delta3       - Delta-3 angle for teetering rotors (degrees) [unused for 3 blades]
@@ -82,7 +82,7 @@ Optimus 17-255 on IEA-15-240 monopile foundation
               9999.9   PtfmPIner    - Platform inertia for pitch tilt rotation about the platform CM (kg m^2)
               9999.9   PtfmYIner    - Platform inertia for yaw rotation about the platform CM (kg m^2)
 --------------------------- Blade ----------------------------------------------
-                  20   BldNodes    - Number of blade nodes (per blade) used for analysis (-)
+                  18   BldNodes    - Number of blade nodes (per blade) used for analysis (-)
 "StrucData/OPT-20-295-Monopile_ElastoDyn_blade.dat" BldFile1    - Name of file containing properties for blade 1 (quoted string)
 "StrucData/OPT-20-295-Monopile_ElastoDyn_blade.dat" BldFile2    - Name of file containing properties for blade 2 (quoted string)
 "StrucData/OPT-20-295-Monopile_ElastoDyn_blade.dat" BldFile3    - Name of file containing properties for blade 3 (quoted string) [unused for 2 blades]
