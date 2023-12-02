@@ -29,7 +29,7 @@ turbine.load_from_fast(
     txt_filename=None)
 
 # Write rotor performance text file
-txt_filename = os.path.join(this_dir, 'Output/Cp_Ct_Cq_OPTIMUS_20_295.txt')
+txt_filename = os.path.join(this_dir, 'Cp_Ct_Cq_OPTIMUS_20_295_v2.txt')
 write_rotor_performance(turbine, txt_filename=txt_filename)
 
 # plot rotor performance
@@ -39,4 +39,4 @@ turbine.Cp.plot_performance()
 if False:
   plt.show()
 else:
-  plt.savefig('Output/Cp_Ct_Cq_OPTIMUS_20_295.png')
+  plt.savefig('Output/Cp_Ct_Cq_OPTIMUS_20_295_v3.png')

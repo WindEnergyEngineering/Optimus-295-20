@@ -19,7 +19,7 @@ turbine_params:
   rated_power:        20000000.             # Rated Power [W], initial condition (list of req.)
   bld_edgewise_freq:  4.0324                # Blade edgewise first natural frequency [rad/s], ??? (blades-team)
   bld_flapwise_freq:  3.4872                # Blade flapwise first natural frequency [rad/s], ??? (blades-team)
-  TSR_operational:    13.0                  # Operational tip-speed-ratio, initial condition (list of req.)
+  TSR_operational:    10.5                  # Operational tip-speed-ratio, initial condition (list of req.)
 
 #------------------------------- CONTROLLER PARAMETERS ----------------------------------
 controller_params:
@@ -45,6 +45,6 @@ controller_params:
   twr_freq:           3.355                 # for semi only!
   ptfm_freq:          0.213                 # for semi only!
   # Optional - these can be defined, but do not need to be
-  min_pitch:          0.043633                   # Minimum pitch angle [rad], {default = 0 degrees}
+  min_pitch:          0.034907                   # Minimum pitch angle [rad], {default = 0 degrees}
   vs_minspd:          0.448857              # Minimum rotor speed [rad/s], {default = 0 rad/s}
   ps_percent:         0                     # Percent peak shaving  [%, <= 1 ], {default = 80%}

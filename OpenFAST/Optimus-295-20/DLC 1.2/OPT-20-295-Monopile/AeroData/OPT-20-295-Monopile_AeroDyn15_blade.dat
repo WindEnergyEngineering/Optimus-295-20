@@ -2,8 +2,8 @@
 Optimus 17-255 on IEA-15-240 monopile foundation						
 ======  Blade Properties =================================================================						
 18          NumBlNds    - Number of blade nodes used in the analysis (-)						
-    BlSpn        BlCrvAC	BlSwpAC	BlCrvAng       BlTwist        BlChord          BlAFID				
-     (m)           (m)            (m)            (deg)         (deg)           (m)              (-)						
+    BlSpn               BlCrvAC	    BlSwpAC	    BlCrvAng     BlTwist     BlChord   BlAFID
+     (m)                    (m)        (m)        (deg)       (deg)       (m)      (-)
 0.00000000000000E+00	0.00E+00	0.00E+00	0.00E+00	1.56E+01	6.50E+00	1
 2.88200000000001E+00	0.00E+00	0.00E+00	0.00E+00	1.56E+01	6.51E+00	2
 1.15280000000000E+01	0.00E+00	0.00E+00	0.00E+00	1.43E+01	6.70E+00	3
