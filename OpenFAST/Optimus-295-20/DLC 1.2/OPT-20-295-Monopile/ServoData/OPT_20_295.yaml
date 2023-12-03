@@ -38,8 +38,8 @@ controller_params:
   Flp_Mode:           0                     # Flap control mode {0: no flap control, 1: steady state flap angle, 2: Proportional flap control}
   # Controller parameters       
   # U_pc:             [14]
-  zeta_pc:            1.0                   # Pitch controller desired damping ratio [-]
-  omega_pc:           0.2                   # Pitch controller desired natural frequency [rad/s]
+  zeta_pc:            0.8                   # Pitch controller desired damping ratio [-]
+  omega_pc:           0.12                   # Pitch controller desired natural frequency [rad/s]
   zeta_vs:            0.85                  # Torque controller desired damping ratio [-]
   omega_vs:           0.12                  # Torque controller desired natural frequency [rad/s]
   twr_freq:           3.355                 # for semi only!
