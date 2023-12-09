@@ -1,7 +1,16 @@
- % -----------------------------
-% Script: Read FAST output files and find static endconditions 
 % -----------------------------
 
+% Script: Read FAST output files in this folder and find static end conditions 
+%
+% Input:       outb-files    - Put the files in current folder
+%
+% Output: 
+% Section 1: Read FAST Output file in this folder
+% Section 2: 
+% Section 3: 
+% Section 4: 
+
+% -----------------------------
 clearvars;close all;clc;
 
 %% Read FAST Output file
@@ -17,11 +26,12 @@ file = fi(i).name;
 
 %eval(sprintf('Fast%d = [Channels]', i)) ;      %get full outb if you want
 
-Time                = Channels(:,1);            % load simulation data
+Time                = Channels(:,1);                % load simulation data
 Wind1VelX(:,i)      = Channels(:,2);
-BldPitch1(:,i)      = Channels(:,5);
+BldPitch1(:,i)      = Channels(:,6);
 RotSpeed(:,i)       = Channels(:,9);
-GenPwr(:,i)         = Channels(:,56);
+GenPower(:,i)       = Channels(:,56);
+GenTq(:,i)          = Channels(:,57);
 
 end
 
@@ -51,16 +61,11 @@ ylabel('\Omega [rpm]')
 
 subplot(414)
 hold on;box on;grid on;
-plot(GenPwr)
+plot(GenPower)
 ylabel('P_{gen} [W]')
 xlabel('time [1/80*s]')
+%% Evaluate Pitch Controller
 
-%% Static values 
+%% Evaluate Torque Controller
 
-Wind_Speed = Wind1VelX(end,:);
-Pitch_Angle = BldPitch1(end,:);
-Rotor_Speed = RotSpeed(end,:);
-Generator_Power = GenPwr(end,:);
-
-Static_Conditions = table(Wind_Speed.', Pitch_Angle.', Rotor_Speed.',Generator_Power.', 'VariableNames', ["Wind_Speed","Pitch_Angle","RotSpeed","Generator_Power"]);
 

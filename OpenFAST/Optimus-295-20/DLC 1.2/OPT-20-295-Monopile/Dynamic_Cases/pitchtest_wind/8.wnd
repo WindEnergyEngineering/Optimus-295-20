@@ -1,0 +1,9 @@
+!Wind file for input to OpenFAST. 
+!Time  Wind     Wind	Vert.       Horiz.      Vert.       LinV        Gust 
+!      Speed    Dir    Speed       Shear		Shear       Shear       Speed 
+0.00 8.00 0.00 0.00 0.00 0.00 0.00 0.00
+300.0 8.00 0.00 0.00 0.00 0.00 0.00 0.00
+300.1 9.00 0.00 0.00 0.00 0.00 0.00 0.00
+600.0 9.00 0.00 0.00 0.00 0.00 0.00 0.00
+
+
