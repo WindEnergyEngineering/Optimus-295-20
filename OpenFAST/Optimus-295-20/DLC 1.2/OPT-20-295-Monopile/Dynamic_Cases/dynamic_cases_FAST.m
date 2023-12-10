@@ -6,14 +6,14 @@
 %
 % Output: 
 % Section 1: Read FAST Output file in this folder
-% Section 2: 
-% Section 3: 
-% Section 4: 
+% Section 2: Plot all Values 
+% Section 3: Evaluate Pitch Controller
+% Section 4: Evaluate Torque Controller
 
 % -----------------------------
 clearvars;close all;clc;
 
-%% Read FAST Output file
+%% Section 1: Read FAST Output file
 fi = dir('*.outb');                 %list folder
 nn = length(fi);
 
@@ -35,7 +35,7 @@ GenTq(:,i)          = Channels(:,57);
 
 end
 
-%% Plot Values 
+%% Section 2: Plot all Values 
 figure
 
 subplot(411)
@@ -64,8 +64,66 @@ hold on;box on;grid on;
 plot(GenPower)
 ylabel('P_{gen} [W]')
 xlabel('time [1/80*s]')
-%% Evaluate Pitch Controller
+%% Section 3: Evaluate Pitch Controller
 
-%% Evaluate Torque Controller
+windspeed        = Wind1VelX(:,1:4);
+Rot_speed        = RotSpeed(:,1:4);
+
+figure
+
+subplot(211)
+hold on;box on;grid on;
+plot(windspeed)
+ylabel('\Omega [rpm]')
+axis([0 1200 10 20])
+
+subplot(212)
+hold on;box on;grid on;
+plot(Rot_speed)
+ylabel('\Omega [rpm]')
+xlabel('time [0.5 s]')
+axis([0 1200 6.47 6.51])
+
+%% Section 4: Evaluate Torque Controller
+
+D           = 295;
+
+wind        = Wind1VelX(:,5);
+gentorque   = GenTq(:,5);
+omega       = RotSpeed(:,5);
+
+Tip_speed   = omega./60*2*pi*0.5*D;
+TSR         = Tip_speed./wind;
 
 
+figure
+
+% plot wind
+subplot(411)
+hold on;box on;grid on;
+plot(wind)
+ylabel('v_0 [m/s]')
+axis([0 1200 7.5 9.5])
+
+
+% plot generator torque
+subplot(412)
+hold on;box on;grid on;
+plot(gentorque)
+ylabel('M_G [kNm]')
+axis([0 1200 250 400])
+
+% plot rotor speed
+subplot(413)
+hold on;box on;grid on;
+plot(omega)
+ylabel('\Omega [rpm]')
+axis([0 1200 5 6.5])
+
+% plot tip speed ratio
+subplot(414)
+hold on;box on;grid on;
+plot(TSR)
+ylabel('\lambda [-]')
+xlabel('time [0.5 s]')
+axis([0 1200 9 11])

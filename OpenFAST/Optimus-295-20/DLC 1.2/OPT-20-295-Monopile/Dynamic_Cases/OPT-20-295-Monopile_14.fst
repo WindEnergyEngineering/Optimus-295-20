@@ -46,7 +46,7 @@ Optimus 17-255 on IEA-15-240 monopile foundation
                 10.0   SttsTime     - Amount of time between screen status messages (s) 
              9999.9   ChkptTime    - Amount of time between creating checkpoint files for potential restart (s) 
   0.5     DT_Out       - Time step for tabular output (s) (or "default") 
- 60.0   TStart       - Time to begin tabular output (s)    
+ 0   TStart       - Time to begin tabular output (s)    
                    2   OutFileFmt   - Format for tabular (time-marching) output file (switch) {1: text file [<RootName>.out], 2: binary file [<RootName>.outb], 3: both} 
                 True   TabDelim     - Use tab delimiters in text tabular output file? (flag) {uses spaces if false} 
           "ES10.3E2"   OutFmt       - Format used for text tabular output, excluding the time channel.  Resulting field should be 10 characters. (quoted string) 

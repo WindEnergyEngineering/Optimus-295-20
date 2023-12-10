@@ -97,7 +97,7 @@ Optimus 17-255 on IEA-15-240 monopile foundation
                    0   TeetHSSp     - Rotor-teeter hard-stop linear-spring constant (N-m/rad) [used only for 2 blades and when TeetMod=1]
 --------------------------- Drivetrain -----------------------------------------
                 97.0   GBoxEff      - Gearbox efficiency (%)
-                 1.0   GBRatio      - Gearbox ratio (-)
+                 58.0   GBRatio      - Gearbox ratio (-)
        51140939610.0   DTTorSpr     - Drivetrain torsional spring (N-m/rad)
           42676833.0   DTTorDmp     - Drivetrain torsional damper (N-m/(rad/s))
 --------------------------- Furling --------------------------------------------
