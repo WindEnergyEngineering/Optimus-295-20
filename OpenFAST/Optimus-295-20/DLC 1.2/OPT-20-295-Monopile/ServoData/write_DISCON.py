@@ -30,7 +30,7 @@ turbine.load_from_fast(
 
 controller.tune_controller(turbine)
 
-param_file = os.path.join(os.path.dirname(__file__), 'OPT-20-295-Monopile-DISCON_v3.IN')
+param_file = os.path.join(os.path.dirname(__file__), 'OPT-20-295-Monopile-DISCON_v4.IN')
 write_DISCON(turbine,controller,
 param_file=param_file,
 txt_filename=cp_filename
